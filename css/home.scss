@@ -1,0 +1,24 @@
+$primary-color: #30B25F;
+$secondary-color: #83FFB0;
+$accent-color: #B23D38;
+$neutral-color: #F2FFF7;
+$secondary-accent: #FF8883;
+$text-color: #29292B;
+
+body {
+	color: $text-color;
+	background-color: $neutral-color;
+}
+
+.carousel-inner img {
+	width: 100%;
+}
+.navbar-default {
+	background-color: $primary-color;
+	color: $neutral-color;
+	border: 0px
+}
+
+#news-carousel {
+	height: 30%;
+}
