@@ -1,0 +1,40 @@
+body {
+	background-color: #fff;
+	color: #252122;
+}
+
+#footer-wrapper {
+	background-color: #252122;
+}
+#header-wrapper {
+	padding: 1.5em 0 1em 0;
+	border-bottom: none;
+}
+
+#intro-section {
+	padding: 0px;
+}
+
+/*#intro section {
+	margin: 0px;
+} */
+
+#main-carousel img {
+	margin-top: 0.5em;
+	width: 100%;
+}
+
+/*#mainlearn {
+	margin-top: 0px;
+	background-color: #ccc;
+	vertical-align: top;
+}*/
+
+
+.iconpic {
+	width: 100px;
+}
+
+.secondary-section {
+	margin: 1em 0;
+}
