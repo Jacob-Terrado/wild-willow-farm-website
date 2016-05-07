@@ -3,8 +3,13 @@ body {
 	color: #252122;
 }
 
+.copyright {
+	font-size: 0.5em;
+	text-align: center;
+}
 #footer-wrapper {
 	background-color: #252122;
+	padding: 1em 0 0 0;
 }
 #header-wrapper {
 	padding: 1.5em 0 1em 0;
@@ -37,4 +42,8 @@ body {
 
 .secondary-section {
 	margin: 1em 0;
+}
+
+ul.divided li {
+	padding: 0.5em 0 0.5em 0;
 }
