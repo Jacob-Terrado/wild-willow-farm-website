@@ -12,7 +12,7 @@ body {
 	padding: 1em 0 0 0;
 }
 #header-wrapper {
-	padding: 1.5em 0 1em 0;
+	padding: 1.5em 0 0 0;
 	border-bottom: none;
 }
 
@@ -45,5 +45,13 @@ body {
 }
 
 ul.divided li {
-	padding: 0.5em 0 0.5em 0;
+	padding: 0.3em 0 0.3em 0;
+}
+
+ul.contact li {
+	padding: 1em 0 1em 5em;
+}
+
+#footer-wrapper header {
+	margin: .5em 0 1.5em 0;
 }
