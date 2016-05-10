@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/class-reg-form.css">
+</head>
+<body>
+  
+  <form class="class-registration">
+    <div class=title>
+      <center><h1>Class Registration Form</h1></center>
+    </div>
+    <div class="row-names">
+      <div class="col-md-6" align="center">First name<br>
+        <input type="text" id="input-first-name">
+      </div>
+      <div class="col-md-6" align="center">Last name<br>
+        <input type="text" id="input-last-name">
+      </div>
+    </div>
+
+    <div class="row-email-and-phone">
+      <div class="col-md-6" align="center">Email address<br>
+        <input type="email" id="input-email">
+      </div>
+      <div class="col-md-6" align="center">Phone number<br>
+        <input type="text" id="input-phone">
+      </div>
+    </div>
+
+    <div class="address">
+      <div class="row-street-address">
+        <div class="col-md-6" align="center">Address line 1<br>
+          <input type="text" id="input-address-line-1">
+        </div>
+        <div class="col-md-6" align="center">Address line 2<br>
+          <input type="text" id="input-address-line-2">
+        </div>
+      </div>
+
+      <div class="row-city-state-zip">
+        <div class="col-md-4" align="center">City<br>
+          <input type="text" id="input-city">
+        </div>
+        <div class="col-md-4" align="center">State<br>
+          <input type="text" id="input-state">
+        </div>
+        <div class="col-md-4" align="center">Zip<br>
+          <input type="text" id="input-zip">
+        </div>
+      </div>
+    </div>
+    
+    <div class="row-demographics">
+      <center>Demographics<br></center>
+      <div class="col-md-6" align="center">
+        <input type="checkbox" name="demographic" value="veteran"> Veteran<br>
+        <input type="checkbox" name="demographic" value="immigrant"> Immigrant<br>
+        <input type="checkbox" name="demographic" value="female"> Female<br>
+        <input type="checkbox" name="demographic" value="youth"> Youth
+      </div>
+      <div class="col-md-6" align="center">
+        <input type="checkbox" name="demographic" value="farmworker"> Farmworker<br>
+        <input type="checkbox" name="demographic" value="beginner-farmer"> Beginner Farmer (farmed fewer than 5 years)<br>
+        <input type="checkbox" name="demographic" value="socially-disadvantaged"> Socially disadvantaged<br>
+        <input type="checkbox" name="demographic" value="economically-disadvantaged"> Economically disadvantaged
+      </div>
+    </div>
+
+    <div class="long-answers" align="center">
+      Why are you interested in sustainable agriculture and this program?<br>
+      <textarea rows="4" cols="75"></textarea><br>
+      What previous experience do you have in farming or gardening?<br>
+      <textarea rows="4" cols="75"></textarea><br>
+      List 3 to 5 personal goals you'd like to achieve during your studies.<br>
+      <textarea rows="4" cols="75"></textarea><br>
+      What kind of heavy labor have you done?<br>
+      <textarea rows="4" cols="75"></textarea><br>
+      Do you have any special interests, hobbies or skills?<br>
+      <textarea rows="4" cols="75"></textarea><br>
+      Are you currently employed and/or a student?<br>
+      <textarea rows="4" cols="75"></textarea><br>
+      Do you have any preliminary comments, questions, or other details for us?<br>
+      <textarea rows="4" cols="75"></textarea>
+    </div>
+
+    <div class="acknowledgement" align="center">
+      <input type="checkbox" name="acknowledgement-checkbox" value="read"> I have read the information outline and feel that I have a firm grasp of what will be expected of me as a student.
+    </div>
+
+    <center>
+      <input type="submit" value="Submit" id="input-submit">
+    </center>
+  
+  </form>
+</body>

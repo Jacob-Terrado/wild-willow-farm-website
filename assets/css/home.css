@@ -16,8 +16,9 @@ body {
 	border-bottom: none;
 }
 
-#intro-section {
+#intro-section > section.first {
 	padding: 0px;
+	margin: 0px;
 }
 
 /*#intro section {
@@ -54,4 +55,19 @@ ul.contact li {
 
 #footer-wrapper header {
 	margin: .5em 0 1.5em 0;
+}
+
+.maps {
+	width: 100%;
+	height: 80%;
+}
+
+@media screen and (max-width: 736px) {
+	.tweets {
+		display: none;
+	}
+}
+
+.first {
+	height: 300px;
 }
