@@ -1518,7 +1518,7 @@
 				height: 3em;
 				text-align: center;
 				border-radius: 5px;
-				background: #888;
+				/*background: #888;*/
 				-moz-transition: background-color .25s ease-in-out;
 				-webkit-transition: background-color .25s ease-in-out;
 				-ms-transition: background-color .25s ease-in-out;
@@ -1532,15 +1532,18 @@
 				}
 
 				ul.social li a.fa-facebook {
-					background: #3c5a98;
+					/*background: #3c5a98;*/
 				}
 
 					ul.social li a.fa-facebook:hover {
 						background: #4c6aa8;
 					}
 
+				ul.social li a.fa-instagram:hover {
+					/*background: #ccc; */
+				}
 				ul.social li a.fa-twitter {
-					background: #2daae4;
+					/*background: #2daae4;*/
 				}
 
 					ul.social li a.fa-twitter:hover {
