@@ -71,3 +71,7 @@ ul.contact li {
 .first {
 	height: 300px;
 }
+.secondary {
+	display: block;
+	height:800px;
+}
