@@ -1217,12 +1217,8 @@
 
 /* Tables */
 
-	table, th, td {
+	table {
 		width: 100%;
-		border: 1px solid black;
-		text-align: center;
-		vertical-align: middle;
-
 	}
 
 		table.default {
@@ -2549,3 +2545,6 @@
 				}
 
 	}
+
+
+
