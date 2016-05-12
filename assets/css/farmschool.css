@@ -1293,6 +1293,7 @@
 		.box .image.featured {
 			position: relative;
 			width: auto;
+			height: 100%;
 		}
 
 
