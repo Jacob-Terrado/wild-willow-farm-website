@@ -1,6 +1,50 @@
-@media (max-width: 950px) {
-	#instructions {
-		max-width: 50%;
-		background-color: blue;
-	}
+.long-answers {
+	margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.row-demographics {
+	margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.row-names {
+	margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.row-names {
+	margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.row-email-and-phone {
+	margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.row-address {
+	margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+#submit-button {
+	margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#acknowledgement-checkbox {
+	margin-right: 20px;
 }
