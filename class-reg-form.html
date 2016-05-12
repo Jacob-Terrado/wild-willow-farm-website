@@ -11,58 +11,60 @@
 </head>
 <body>
 	<form class="class-registration">		
-		
-		<!-- Logo -->
-		<div class="title" align="center">
-			<h2>Class Registration Form</h2>
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header">
+				
+				<!-- Logo -->
+				<h1>Class Registration Form</h1>
+
+				<!-- Nav -->
+				<nav id="nav" align="center">
+					<ul>
+						<li class="current"><a href="index.html">Home</a></li>
+						<li>
+							<a href="#">Get Informed</a>
+							<ul>
+								<li><a href="#">Events</a></li>
+								<li><a href="#">Class Schedule</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Get Involved</a>
+							<ul>
+								<li><a href="class-reg-form.html">Farm School</a></li>
+								<li><a href="#">Volunteer</a></li>
+								<li><a href="#">Farmshare</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Group Activities</a>
+							<ul>
+								<li><a href="#">Tours</a></li>
+								<li><a href="#">Field Trips</a></li>
+								<li><a href="#">Venue Rental</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Support</a>
+							<ul>
+								<li><a href="#">Donate</a></li>
+							</ul>
+						</li>
+						<li><a href="#">About Us</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 
-		<!-- Nav -->
-		<nav id="nav" align="center"><br>
-			<ul>
-				<li class="current"><a href="index.html">Home</a></li>
-				<li>
-					<a href="#">Get Informed</a>
-					<ul>
-						<li><a href="#">Events</a></li>
-						<li><a href="#">Class Schedule</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Get Involved</a>
-					<ul>
-						<li><a href="class-reg-form.html">Farm School</a></li>
-						<li><a href="#">Volunteer</a></li>
-						<li><a href="#">Farmshare</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Group Activities</a>
-					<ul>
-						<li><a href="#">Tours</a></li>
-						<li><a href="#">Field Trips</a></li>
-						<li><a href="#">Venue Rental</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Support</a>
-					<ul>
-						<li><a href="#">Donate</a></li>
-					</ul>
-				</li>
-				<li><a href="#">About Us</a></li>
-			</ul>
-		</nav>
-
 		<!-- Instructions -->
-		<div class="row-instructions">
+		<div class="row">
 			<div class="col-md-3"></div>
 			<div class="col-md-6" id="instructions">
 				<ul>
 					<li>
 						<p>Fill out Application below. We recommend for the essay portions that you write them separately and then paste into the form fields. We really do enjoy reading them. If you leave the page and come back, you will need to generate a new Security Image before submitting. [There might be an error code about "stripslashes on line 319"; please ignore this, we will get your form regardless].</p>
 					</li>
-					<br>
 					<li>
 						<p>After submission, we will contact you with further instructions and answers to questions, including how to pay the required $100 Enrollment Fee. You are not enrolled in the class until the fee has been paid.</p>
 					</li>
@@ -71,89 +73,123 @@
 			<div class="col-md-3"></div>
 			</div>
 		</div>
-	
+
 		<!-- First and last name -->
-		<div class="row-names">
-			<div class="col-md-6" align="center">First name<br>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-4" align="center">First name<br>
 				<input type="text" id="input-first-name">
 			</div>
-			<div class="col-md-6" align="center">Last name<br>
+			<div class="col-md-4" align="center">Last name<br>
 				<input type="text" id="input-last-name">
 			</div>
+			<div class="col-md-2"></div>
 		</div>
 
 		<!-- Email and phone number -->
-		<div class="row-email-and-phone">
-			<div class="col-md-6" align="center">Email address<br>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-4" align="center">Email address<br>
 				<input type="email" id="input-email">
 			</div>
-			<div class="col-md-6" align="center">Phone number<br>
+			<div class="col-md-4" align="center">Phone number<br>
 				<input type="text" id="input-phone">
 			</div>
+			<div class="col-md-2"></div>
 		</div>
 
 		<!-- Address -->
-		<div class="row-address">
-			<div class="row-street-address">
-				<div class="col-md-6" align="center">Address line 1<br>
-					<input type="text" id="input-address-line-1">
-				</div>
-				<div class="col-md-6" align="center">Address line 2<br>
-					<input type="text" id="input-address-line-2">
-				</div>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-4" align="center">Address line 1<br>
+				<input type="text" id="input-address-line-1">
 			</div>
+			<div class="col-md-4" align="center">Address line 2<br>
+				<input type="text" id="input-address-line-2">
+			</div>
+			<div class="col-md-2"></div>
+		</div>
 
-			<div class="row-city-state-zip">
-				<div class="col-md-4" align="center">City<br>
-					<input type="text" id="input-city" size="35">
-				</div>
-				<div class="col-md-4" align="center">State<br>
-					<input type="text" id="input-state">
-				</div>
-				<div class="col-md-4" align="center">Zip<br>
-					<input type="text" id="input-zip">
-				</div>
+		<div class="row">
+			<div class=col-md-2></div>
+			<div class="col-md-3" align="center">City<br>
+				<input type="text" id="input-city">
 			</div>
+			<div class="col-md-2" align="center">State<br>
+				<input type="text" id="input-state">
+			</div>
+			<div class="col-md-3" align="center">Zip<br>
+				<input type="text" id="input-zip">
+			</div>
+			<div class=col-md-2></div>
 		</div>
 
 		<!-- Demographics -->
-		<div class="row-demographics">
-			<center><h3>Demographcs</h3></center>
-			<div class="col-md-6" id="demo-col-1">
-				<input type="checkbox" name="demographic" value="veteran"> Veteran<br>
-				<input type="checkbox" name="demographic" value="immigrant"> Immigrant<br>
-				<input type="checkbox" name="demographic" value="female"> Female<br>
-				<input type="checkbox" name="demographic" value="youth"> Youth
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-3" id="demo-col-1">
+				<input type="checkbox" name="demographic" value="veteran" \>
+					Veteran<br>
+				<input type="checkbox" name="demographic" value="immigrant" >
+					Immigrant<br>
+				<input type="checkbox" name="demographic" value="female" \>
+					Female<br>
+				<input type="checkbox" name="demographic" value="youth" \>
+					Youth
 			</div>
-			<div class="col-md-6" id="demo-col-1">
-				<input type="checkbox" name="demographic" value="farmworker"> Farmworker<br>
-				<input type="checkbox" name="demographic" value="beginner-farmer"> Beginner Farmer (farmed fewer than 5 years)<br>
-				<input type="checkbox" name="demographic" value="socially-disadvantaged"> Socially disadvantaged<br>
-				<input type="checkbox" name="demographic" value="economically-disadvantaged"> Economically disadvantaged
+			<div class="col-md-4" id="demo-col-2">
+				<input type="checkbox" name="demographic" value="farmworker" \>
+					Farmworker<br>
+				<input type="checkbox" name="demographic" value="beginner-farmer" \>
+					Beginner Farmer (farmed fewer than 5 years)<br>
+				<input type="checkbox" name="demographic" value="socially-disadvantaged" \>
+					Socially disadvantaged<br>
+				<input type="checkbox" name="demographic" value="economically-disadvantaged">
+					Economically disadvantaged
 			</div>
+			<div class="col-md-2"></div>
 		</div>
 
 		<!-- Q&A -->
-		<div class="long-answers" align="center">
-			Why are you interested in sustainable agriculture and this program?<br>
-			<textarea rows="4" cols="75" disabled="true"></textarea><br>
-			What previous experience do you have in farming or gardening?<br>
-			<textarea rows="4" cols="75"></textarea><br>
-			List 3 to 5 personal goals you'd like to achieve during your studies.<br>
-			<textarea rows="4" cols="75"></textarea><br>
-			What kind of heavy labor have you done?<br>
-			<textarea rows="4" cols="75"></textarea><br>
-			Do you have any special interests, hobbies or skills?<br>
-			<textarea rows="4" cols="75"></textarea><br>
-			Are you currently employed and/or a student?<br>
-			<textarea rows="4" cols="75"></textarea><br>
-			Do you have any preliminary comments, questions, or other details for us?<br>
-			<textarea rows="4" cols="75"></textarea>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class=col-md-6 align="center">
+				Why are you interested in sustainable agriculture and this program?<br>
+				<textarea></textarea><br>
+				What previous experience do you have in farming or gardening?<br>
+				<textarea></textarea><br>
+				List 3 to 5 personal goals you'd like to achieve during your studies.<br>
+				<textarea></textarea><br>
+				What kind of heavy labor have you done?<br>
+				<textarea></textarea><br>
+				Do you have any special interests, hobbies or skills?<br>
+				<textarea></textarea><br>
+				Are you currently employed and/or a student?<br>
+				<textarea></textarea><br>
+				Do you have any preliminary comments, questions, or other details for us?<br>
+				<textarea></textarea>
+			</div>
+			<div class="col-md-3"></div>
 		</div>
 
-		<div class="acknowledgement" align="center">
-			<input type="checkbox" id="acknowledgement-checkbox" value="read"> I have read the information outline and feel that I have a firm grasp of what will be expected of me as a student.
+		<div class="acknowledgement">
+			<div class="col-md-1"></div>
+			<div class="col-md-10" align="center">
+				<input type="checkbox" id="acknowledgement-checkbox" value="read" \> I have read the information outline and feel that I have a firm grasp of what will be expected of me as a student.<br>
+				<input type="submit" value="Submit" id="submit-button" \>
+			</div>
+			<div class="col-md-1"></div>
 		</div>
-		<center><input type="submit" value="Submit" id="submit-button"></center>
 	</form>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/skel-viewport.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
+</html>
