@@ -1,36 +1,54 @@
-#nav {
-    margin-top: 50px;
-    margin-bottom: 60px;
-}
-
-.title {
-    margin-top: 50px;
-}
-
 #instructions {
     margin-top: 50px;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
 }
 
 .row-names {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 200px;
-    margin-left: 200px;
+    
+}
+
+#input-first-name {
+    max-width: 400px;
+}
+
+#input-last-name {
+    max-width: 400px;
+}
+
+#input-email {
+    max-width: 400px;
+}
+
+#input-phone {
+    max-width: 400px;
+}
+
+#input-address-line-1 {
+    max-width: 400px;
+}
+
+#input-address-line-2 {
+    max-width: 400px;
+}
+
+#input-city {
+    max-width: 500px;
+}
+
+#input-state {
+    max-width: 100px;
+}
+
+#input-zip {
+    max-width: 500px;
 }
 
 .row-email-and-phone {
-	margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 200px;
-    margin-left: 200px;
+
 }
 
 .row-address {
-	margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 200px;
-    margin-left: 200px;
+
 }
 
 #demo-col-1 {
@@ -44,28 +62,21 @@
 }
 
 .row-demographics {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 200px;
-    margin-left: 200px;
-}
 
-.long-answers {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 200px;
-    margin-left: 200px;
 }
 
 textarea {
-  resize: vertical; /* user can resize vertically, but width is fixed */
+  resize: none; /* user can resize vertically, but width is fixed */
+  max-width: 650px;
 }
 
 #acknowledgement-checkbox {
+    margin-top: 45px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 #submit-button {
 	margin-top: 20px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
