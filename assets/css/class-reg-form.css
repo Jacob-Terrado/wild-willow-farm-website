@@ -8,7 +8,6 @@
 }
 
 #instructions {
-    margin
     margin-top: 50px;
     margin-bottom: 45px;
 }
@@ -56,6 +55,10 @@
     margin-bottom: 100px;
     margin-right: 200px;
     margin-left: 200px;
+}
+
+textarea {
+  resize: vertical; /* user can resize vertically, but width is fixed */
 }
 
 #acknowledgement-checkbox {
