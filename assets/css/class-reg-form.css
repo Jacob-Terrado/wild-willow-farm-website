@@ -1,6 +1,6 @@
 #nav {
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .title {
@@ -34,6 +34,16 @@
     margin-left: 200px;
 }
 
+#demo-col-1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#demo-col-2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .row-demographics {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -53,6 +63,6 @@
 }
 
 #submit-button {
-	margin-top: 50px;
-    margin-bottom: 100px;
+	margin-top: 20px;
+    margin-bottom: 75px;
 }
