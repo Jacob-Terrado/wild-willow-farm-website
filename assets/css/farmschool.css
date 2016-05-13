@@ -1296,7 +1296,6 @@
 			height: 100%;
 		}
 
-
 /* Button */
 
 	input[type="button"],
@@ -1800,6 +1799,10 @@
 
 				header.major {
 					margin: 0 0 3em 0;
+				}
+
+				header.tiers {
+					background-color: #d52349;
 				}
 
 			footer {
