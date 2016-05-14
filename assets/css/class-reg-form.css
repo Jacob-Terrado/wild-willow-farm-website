@@ -49,9 +49,9 @@
 }
 
 textarea {
-  resize: none;
+  resize: vertical;
   max-width: 650px;
-  text-transform: uppercase;
+  
 }
 
 #acknowledgement-checkbox {
@@ -63,8 +63,4 @@ textarea {
 #submit-button {
 	margin-top: 20px;
     margin-bottom: 50px;
-}
-
-form input[type=text] {
-    text-transform: uppercase;
 }
