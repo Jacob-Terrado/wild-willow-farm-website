@@ -75,6 +75,9 @@ ul.contact li {
 
 .secondary {
     display: block;
+	overflow: auto;
+	height: 800px;
+
 }
 
 @media screen and (min-width: 737px) {
