@@ -126,3 +126,9 @@ ul.contact li {
         margin: 0 0 0 0 !important;
     }
 }
+.form {
+    padding-left: 0px;
+}
+.button1{
+    float:right;
+}
