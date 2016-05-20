@@ -87,3 +87,7 @@ textarea {
         width: 90%;
     }
 }
+
+input[type="checkbox"] {
+    margin-right: 20px;
+}
