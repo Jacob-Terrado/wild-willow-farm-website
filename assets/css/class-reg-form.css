@@ -79,7 +79,7 @@ textarea {
 #submit-button {
 	margin-top: 30px;
     margin-bottom: 50px;
-    width: 40%;
+    width: 20%;
 }
 
 @media screen and (max-width: 737px) {
