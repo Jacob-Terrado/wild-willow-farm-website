@@ -1,24 +1,26 @@
 body {
-	background-color: #fff;
-	color: #252122;
+    background-color: #fff;
+    color: #252122;
 }
 
 .copyright {
-	font-size: 0.5em;
-	text-align: center;
+    font-size: 0.5em;
+    text-align: center;
 }
+
 #footer-wrapper {
-	background-color: #252122;
-	padding: 1em 0 0 0;
+    background-color: #252122;
+    padding: 1em 0 0 0;
 }
+
 #header-wrapper {
-	padding: 1.5em 0 0 0;
-	border-bottom: none;
+    padding: 1.5em 0 0 0;
+    border-bottom: none;
 }
 
 #intro-section > section.first {
-	padding: 0px;
-	margin: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 /*#intro section {
@@ -26,8 +28,13 @@ body {
 } */
 
 #main-carousel img {
-	margin-top: 0.5em;
-	width: 100%;
+    margin-top: 0.5em;
+    width: 100%;
+    height:100%;
+}
+.carousel-pic{
+    height: 400px;
+    overflow: hidden;
 }
 
 /*#mainlearn {
@@ -36,41 +43,97 @@ body {
 	vertical-align: top;
 }*/
 
-
 .iconpic {
-	width: 100px;
+    width: 100px;
 }
 
 .secondary-section {
-	margin: 1em 0;
+    margin: 1em 0;
 }
 
 ul.divided li {
-	padding: 0.3em 0 0.3em 0;
+    padding: 0.3em 0 0.3em 0;
 }
 
 ul.contact li {
-	padding: 1em 0 1em 5em;
+    padding: 1em 0 1em 5em;
 }
 
 #footer-wrapper header {
-	margin: .5em 0 1.5em 0;
+    margin: .5em 0 1.5em 0;
 }
 
 .maps {
-	width: 100%;
-	height: 80%;
+    width: 100%;
+    height: 80%;
 }
 
 @media screen and (max-width: 736px) {
-	.tweets {
-		display: none;
-	}
+    .tweets {
+        display: none;
+    }
 }
 
 .first {
-	height: 300px;
+    height: 300px;
 }
+
 .secondary {
-	display: block;
+    display: block;
+	overflow: auto;
+	height: 800px;
+
+}
+
+@media screen and (min-width: 737px) {
+    .home-header {
+        font-size: 3em;
+    }
+
+    #main-wrapper {
+        padding: 2.5em 0 2.5em 0;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .home-header {
+        font-size: 2em;
+    }
+
+    .\31 2u\28mobile\29, .\31 2u\24\28mobile\29 {
+        text-align: center;
+    }
+
+    a, p {
+       font-size: 1.25em;
+    }
+
+    h3 {
+        margin-left: 15%;
+    }
+
+    p.copyright {
+        font-size: 1.1em;
+        display: block;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    #intro {
+        padding: 0 25px 40px 25px;
+    }
+
+    #main-wrapper {
+        padding: 1em
+    }
+
+    .box {
+        margin: 0 0 0 0 !important;
+    }
+}
+.form {
+    padding-left: 0px;
+}
+.button1{
+    float:right;
 }

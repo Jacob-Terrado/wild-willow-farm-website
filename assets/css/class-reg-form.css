@@ -1,54 +1,59 @@
-#instructions {
-    margin-top: 50px;
+form {
+    background-color: #fff;
+    color: #252122;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+#row-instructions {
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.row-names {
-    
-}
-
 #input-first-name {
-    max-width: 400px;
+    max-width: 250px;
 }
 
 #input-last-name {
-    max-width: 400px;
+    max-width: 250px;
 }
 
 #input-email {
-    max-width: 400px;
+    max-width: 250px;
 }
 
 #input-phone {
-    max-width: 400px;
+    max-width: 250px;
 }
 
 #input-address-line-1 {
-    max-width: 400px;
+    max-width: 250px;
 }
 
 #input-address-line-2 {
-    max-width: 400px;
+    max-width: 250px;
 }
 
 #input-city {
-    max-width: 500px;
+    max-width: 250px;
 }
 
 #input-state {
-    max-width: 100px;
+    max-width: 250px;
 }
 
 #input-zip {
-    max-width: 500px;
+    max-width: 250px;
 }
 
-.row-email-and-phone {
-
-}
-
-.row-address {
-
+@media screen and (max-width: 737px) {
+    #row-zip {
+        margin: 0 auto;
+        float: none;
+    }
 }
 
 #demo-col-1 {
@@ -61,22 +66,28 @@
     margin-bottom: 50px;
 }
 
-.row-demographics {
-
-}
-
 textarea {
-  resize: none; /* user can resize vertically, but width is fixed */
-  max-width: 650px;
+  resize: vertical;
 }
 
 #acknowledgement-checkbox {
-    margin-top: 45px;
+    margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
 
 #submit-button {
-	margin-top: 20px;
+	margin-top: 30px;
     margin-bottom: 50px;
+    width: 20%;
+}
+
+@media screen and (max-width: 737px) {
+    #submit-button {
+        width: 90%;
+    }
+}
+
+input[type="checkbox"] {
+    margin-right: 20px;
 }

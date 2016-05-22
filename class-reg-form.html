@@ -1,159 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Class Registration Form</title>
   	<meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1" />
-  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="assets/css/class-reg-form.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/home.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/class-reg-form.css" />
 </head>
 <body>
-	<form class="class-registration">		
-		
-		<!-- Logo -->
-		<div class="title" align="center">
-			<h2>Class Registration Form</h2>
-		</div>
-
-		<!-- Nav -->
-		<nav id="nav" align="center"><br>
-			<ul>
-				<li class="current"><a href="index.html">Home</a></li>
-				<li>
-					<a href="#">Get Informed</a>
-					<ul>
-						<li><a href="#">Events</a></li>
-						<li><a href="#">Class Schedule</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Get Involved</a>
-					<ul>
-						<li><a href="class-reg-form.html">Farm School</a></li>
-						<li><a href="#">Volunteer</a></li>
-						<li><a href="#">Farmshare</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Group Activities</a>
-					<ul>
-						<li><a href="#">Tours</a></li>
-						<li><a href="#">Field Trips</a></li>
-						<li><a href="#">Venue Rental</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Support</a>
-					<ul>
-						<li><a href="#">Donate</a></li>
-					</ul>
-				</li>
-				<li><a href="#">About Us</a></li>
-			</ul>
-		</nav>
-
-		<!-- Instructions -->
-		<div class="row-instructions">
-			<div class="col-md-3"></div>
-			<div class="col-md-6" id="instructions">
+	<!-- Header -->
+	<div id="header-wrapper">
+		<div id="header">
+			<!-- Logo -->
+			<h1>Class Registration Form</h1>
+			<!-- Nav -->
+			<nav id="nav" align="center">
 				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
 					<li>
-						<p>Fill out Application below. We recommend for the essay portions that you write them separately and then paste into the form fields. We really do enjoy reading them. If you leave the page and come back, you will need to generate a new Security Image before submitting. [There might be an error code about "stripslashes on line 319"; please ignore this, we will get your form regardless].</p>
+						<a href="#">Get Informed</a>
+						<ul>
+							<li><a href="#">Events</a></li>
+							<li><a href="#">Class Schedule</a></li>
+						</ul>
 					</li>
-					<br>
 					<li>
-						<p>After submission, we will contact you with further instructions and answers to questions, including how to pay the required $100 Enrollment Fee. You are not enrolled in the class until the fee has been paid.</p>
+						<a href="#">Get Involved</a>
+						<ul>
+							<li><a href="farmSchoolWithSidebar.html">Farm School</a></li>
+							<li><a href="#">Volunteer</a></li>
+							<li><a href="#">Farmshare</a></li>
+						</ul>
 					</li>
+					<li>
+						<a href="#">Group Activities</a>
+						<ul>
+							<li><a href="#">Tours</a></li>
+							<li><a href="#">Field Trips</a></li>
+							<li><a href="#">Venue Rental</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Support</a>
+						<ul>
+							<li><a href="#">Donate</a></li>
+						</ul>
+					</li>
+					<li><a href="#">About Us</a></li>
 				</ul>
-			</div>
-			<div class="col-md-3"></div>
-			</div>
+			</nav>
 		</div>
-	
-		<!-- First and last name -->
-		<div class="row-names">
-			<div class="col-md-6" align="center">First name<br>
-				<input type="text" id="input-first-name">
+	</div>
+	<!-- Form -->
+	<form class="class-registration">
+		<!-- Instructions -->
+		<div class="container">
+			<div class="row" id="row-instructions">
+				<div class="col-lg-8 col-centered">
+					<ul>
+						<li>
+							<p>Fill out the application below. We recommend for the essay portions you write them separately and then paste into the form fields. We really do enjoy reading them.</p>
+						</li>
+						<li>
+							<p>After submission, we will contact you with further instructions and answers to questions, including how to pay the required $100 enrollment fee. You are not enrolled in the class until the fee has been paid.</p>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="col-md-6" align="center">Last name<br>
-				<input type="text" id="input-last-name">
+			<!-- First and last name -->
+			<div class="row" id="row-names">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-4" align="center">First name<br>
+					<input type="text" id="input-first-name">
+				</div>
+				<div class="col-lg-4" align="center">Last name<br>
+					<input type="text" id="input-last-name">
+				</div>
+				<div class="col-lg-2"></div>
 			</div>
-		</div>
-
-		<!-- Email and phone number -->
-		<div class="row-email-and-phone">
-			<div class="col-md-6" align="center">Email address<br>
-				<input type="email" id="input-email">
+			<!-- Email and phone number -->
+			<div class="row" id="row-email-phone">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-4" align="center">Email address<br>
+					<input type="text" id="input-email">
+				</div>
+				<div class="col-lg-4" align="center">Phone number<br>
+					<input type="text" id="input-phone">
+				</div>
+				<div class="col-lg-2"></div>
 			</div>
-			<div class="col-md-6" align="center">Phone number<br>
-				<input type="text" id="input-phone">
-			</div>
-		</div>
-
-		<!-- Address -->
-		<div class="row-address">
-			<div class="row-street-address">
-				<div class="col-md-6" align="center">Address line 1<br>
+			<!-- Street address -->
+			<div class="row" id="row-address">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-4" align="center">Address line 1<br>
 					<input type="text" id="input-address-line-1">
 				</div>
-				<div class="col-md-6" align="center">Address line 2<br>
+				<div class="col-lg-4" align="center">Address line 2<br>
 					<input type="text" id="input-address-line-2">
 				</div>
+				<div class="col-lg-2"></div>
 			</div>
-
-			<div class="row-city-state-zip">
-				<div class="col-md-4" align="center">City<br>
-					<input type="text" id="input-city" size="35">
+			<!-- City and state-->
+			<div class="row" id="row-city-state">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-4" align="center">City<br>
+					<input type="text" id="input-city">
 				</div>
-				<div class="col-md-4" align="center">State<br>
+				<div class="col-lg-4" align="center">State<br>
 					<input type="text" id="input-state">
 				</div>
-				<div class="col-md-4" align="center">Zip<br>
+				<div class="col-lg-2"></div>
+			</div>
+			<!-- Zip -->
+			<div class="row" id="row-zip">
+				<div class=col-lg-12 align="center">Zip<br>
 					<input type="text" id="input-zip">
 				</div>
 			</div>
-		</div>
-
-		<!-- Demographics -->
-		<div class="row-demographics">
-			<center><h3>Demographcs</h3></center>
-			<div class="col-md-6" id="demo-col-1">
-				<input type="checkbox" name="demographic" value="veteran"> Veteran<br>
-				<input type="checkbox" name="demographic" value="immigrant"> Immigrant<br>
-				<input type="checkbox" name="demographic" value="female"> Female<br>
-				<input type="checkbox" name="demographic" value="youth"> Youth
+			<!-- Demographics -->
+			<div class="row" id="row-demographics">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-3" id="demo-col-1">
+					<input type="checkbox" name="demographic" value="veteran" \>
+					Veteran<br>
+					<input type="checkbox" name="demographic" value="immigrant" >
+					Immigrant<br>
+					<input type="checkbox" name="demographic" value="female" \>
+					Female<br>
+					<input type="checkbox" name="demographic" value="youth" \>
+					Youth
+				</div>
+				<div class="col-lg-4" id="demo-col-2">
+					<input type="checkbox" name="demographic" value="farmworker" \>
+					Farmworker<br>
+					<input type="checkbox" name="demographic" value="beginner-farmer" \>
+					Beginner Farmer (farmed fewer than 5 years)<br>
+					<input type="checkbox" name="demographic" value="socially-disadvantaged" \>
+					Socially disadvantaged<br>
+					<input type="checkbox" name="demographic" value="economically-disadvantaged">
+					Economically disadvantaged
+				</div>
+				<div class="col-lg-2"></div>
 			</div>
-			<div class="col-md-6" id="demo-col-1">
-				<input type="checkbox" name="demographic" value="farmworker"> Farmworker<br>
-				<input type="checkbox" name="demographic" value="beginner-farmer"> Beginner Farmer (farmed fewer than 5 years)<br>
-				<input type="checkbox" name="demographic" value="socially-disadvantaged"> Socially disadvantaged<br>
-				<input type="checkbox" name="demographic" value="economically-disadvantaged"> Economically disadvantaged
+			<!-- Q&A -->
+			<div class="row" id="row-q-and-a">
+				<div class="col-lg-3"></div>
+				<div class=col-lg-6 align="center">
+					Why are you interested in sustainable agriculture and this program?<br>
+					<textarea></textarea><br>
+					What previous experience do you have in farming or gardening?<br>
+					<textarea></textarea><br>
+					List 3 to 5 personal goals you'd like to achieve during your studies.<br>
+					<textarea></textarea><br>
+					What kind of heavy labor have you done?<br>
+					<textarea></textarea><br>
+					Do you have any special interests, hobbies or skills?<br>
+					<textarea></textarea><br>
+					Are you currently employed and/or a student?<br>
+					<textarea></textarea><br>
+					Do you have any preliminary comments, questions, or other details for us?<br>
+					<textarea></textarea>
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+			<!-- Acknowledgement & submit button -->
+			<div class="row" id="row-acknowledgement">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-10" align="center">
+					<input type="checkbox" id="acknowledgement-checkbox" value="read" \> I have read the information outline and feel that I have a firm grasp of what will be expected of me as a student.<br>
+					<input type="submit" value="Submit" id="submit-button" \>
+				</div>
+				<div class="col-lg-1"></div>
 			</div>
 		</div>
-
-		<!-- Q&A -->
-		<div class="long-answers" align="center">
-			Why are you interested in sustainable agriculture and this program?<br>
-			<textarea rows="4" cols="75" disabled="true"></textarea><br>
-			What previous experience do you have in farming or gardening?<br>
-			<textarea rows="4" cols="75"></textarea><br>
-			List 3 to 5 personal goals you'd like to achieve during your studies.<br>
-			<textarea rows="4" cols="75"></textarea><br>
-			What kind of heavy labor have you done?<br>
-			<textarea rows="4" cols="75"></textarea><br>
-			Do you have any special interests, hobbies or skills?<br>
-			<textarea rows="4" cols="75"></textarea><br>
-			Are you currently employed and/or a student?<br>
-			<textarea rows="4" cols="75"></textarea><br>
-			Do you have any preliminary comments, questions, or other details for us?<br>
-			<textarea rows="4" cols="75"></textarea>
-		</div>
-
-		<div class="acknowledgement" align="center">
-			<input type="checkbox" id="acknowledgement-checkbox" value="read"> I have read the information outline and feel that I have a firm grasp of what will be expected of me as a student.
-		</div>
-		<center><input type="submit" value="Submit" id="submit-button"></center>
 	</form>
+	<!-- Footer -->
+	<div id="footer-wrapper">
+		<section id="footer" class="container">
+			<div class="row">
+				<div class="3u 12u(mobile)">
+					<section>
+						<header>
+							<h2>Get Connected!</h2>
+						</header>
+						<ul class="divided">
+							<li><a href="#">Make a Donation</a></li>
+							<li><a href="#">Volunteer</a></li>
+							<li><a href="#">Apply for CSA</a></li>
+							<li><a href="#">Attend an Event</a></li>
+							<li><a href="#">Sign Up for a Class</a></li>
+							<li><a href="#">Sign Up for our Newsletter</a></li>
+						</ul>
+					</section>
+				</div>
+				<div class="3u 12u(mobile)">
+					<section>
+						<header>
+							<h2>Site Map</h2>
+						</header>
+						<ul class="divided">
+							<li><a href="#">About</a></li>
+							<li><a href="#">Calendar</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">CSA</a></li>
+							<li><a href="#">Donate</a></li>
+							<li><a href="#">Farm School</a></li>
+							<li><a href="#">Get Involved</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</section>
+				</div>
+				<div class="3u 12u(mobile)">
+					<section>
+						<column>
+						<header>
+							<h2>Contact Us!</h2>
+						</header>
+						</column>
+						<ul class="social">
+							<li><a class="icon fa-facebook" href="https://www.facebook.com/wildwillowfarm"><span class="label">Facebook</span></a>
+							</li>
+							<li><a class="icon fa-twitter" href="https://twitter.com/WildWillowFarm"><span class="label">Twitter</span></a></li>
+							<li><a class="icon fa-instagram" href="http://instagram.com/wildwillowfarm"><span
+								class="label">Instagram</span></a></li>
+						</ul>
+						<ul class="contact">
+							<li>
+								<h3>Address</h3>
+								<p>
+									2550 Sunset Avenue<br/>
+									San Diego, CA 92154
+								</p>
+							</li>
+							<li>
+								<h3>Mailing</h3>
+								<p>
+									Wild Willow Farm<br/>
+									PO Box 33285<br/>
+									San Diego, CA 92163
+								</p>
+							</li>
+							<li>
+								<h3>Email</h3>
+							</li>
+						</ul>
+					</section>
+				</div>
+				<div class="3u 12u(mobile)">
+					<section>
+					<div class="tweets"><a class="twitter-timeline" href="https://twitter.com/WildWillowFarm" data-widget-id="729823606922829824" height="250">Tweets by @WildWillowFarm</a>
+						<script>!function (d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+							if (!d.getElementById(id)) {
+								js = d.createElement(s);
+								js.id = id;
+								js.src = p + "://platform.twitter.com/widgets.js";
+								fjs.parentNode.insertBefore(js, fjs);
+							}
+						}(document, "script", "twitter-wjs");</script>
+					</div>
+					<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3362.799466586218!2d-117.08189798487017!3d32.55819680241771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94bfd77bd90f3%3A0x2cf02dd20ef314e9!2s2550+Sunset+Ave%2C+San+Diego%2C+CA+92154!5e0!3m2!1sen!2sus!4v1462907043747" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</section>
+				</div>
+				<p class="copyright">&copy; Wild Willow Farm 2016. All rights reserved.</p>
+			</div>
+		</section>
+	</div>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/skel-viewport.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="assets/js/main.js"></script>
 </body>
+</html>
