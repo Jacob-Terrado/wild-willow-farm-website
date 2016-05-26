@@ -74,7 +74,7 @@ ul.contact li {
     }
 }
 
-.first {
+.first, .second, .third {
     height: 300px;
 }
 
@@ -96,6 +96,23 @@ ul.contact li {
 }
 
 @media screen and (max-width: 736px) {
+
+    .first, .second, .third {
+        height: 8%;
+    }
+
+    .third, .second {
+        border-top: solid 1px #dfdfdf;
+    }
+
+    #intro section p {
+        margin: 5px;
+    }
+
+    #intro .row > * {
+        padding: 0 0 0 20px;
+    }
+
     .home-header {
         font-size: 2em;
     }
@@ -120,7 +137,8 @@ ul.contact li {
     }
 
     #intro {
-        padding: 0 25px 40px 25px;
+        padding: 25px;
+        margin: 0 !important;
     }
 
     #main-wrapper {
@@ -131,6 +149,7 @@ ul.contact li {
         margin: 0 0 0 0 !important;
     }
 }
+
 .form {
     padding-left: 0px;
 }
