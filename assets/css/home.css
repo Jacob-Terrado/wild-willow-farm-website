@@ -80,8 +80,6 @@ ul.contact li {
 
 .secondary {
     display: block;
-	overflow: auto;
-	height: 800px;
 
 }
 
@@ -135,5 +133,6 @@ ul.contact li {
     padding-left: 0px;
 }
 .button1{
+    margin-top: 15px;
     float:right;
 }
