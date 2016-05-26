@@ -3,10 +3,12 @@ body {
     color: #252122;
 }
 
-.copyright {
+.small {
     font-size: 0.5em;
     text-align: center;
+    display: block;
 }
+
 
 #footer-wrapper {
     background-color: #252122;
@@ -80,7 +82,6 @@ ul.contact li {
 
 .secondary {
     display: block;
-	overflow: auto;
 }
 
 @media screen and (min-width: 737px) {
@@ -164,6 +165,6 @@ ul.contact li {
 .form {
     padding-left: 0px;
 }
-.button1{
-    float:right;
+.button1 {
+    margin-bottom: 15px;
 }
