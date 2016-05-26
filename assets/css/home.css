@@ -3,10 +3,12 @@ body {
     color: #252122;
 }
 
-.copyright {
+.small {
     font-size: 0.5em;
     text-align: center;
+    display: block;
 }
+
 
 #footer-wrapper {
     background-color: #252122;
@@ -74,15 +76,12 @@ ul.contact li {
     }
 }
 
-.first {
+.first, .second, .third {
     height: 300px;
 }
 
 .secondary {
     display: block;
-	overflow: auto;
-	height: 800px;
-
 }
 
 @media screen and (min-width: 737px) {
@@ -96,11 +95,41 @@ ul.contact li {
 }
 
 @media screen and (max-width: 736px) {
+
+    ul.dates li {
+        padding: 1.3em 0 1.3em 6em;
+    }
+
+    #events {
+        padding: 20px;
+        margin: 0 !important;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .first, .second, .third {
+        height: 8%;
+    }
+
+    .third, .second {
+        border-top: solid 1px #dfdfdf;
+    }
+
+    #intro section p {
+        margin: 5px;
+    }
+
+    #intro .row > * {
+        padding: 0 0 0 20px;
+    }
+
     .home-header {
         font-size: 2em;
     }
 
-    .\31 2u\28mobile\29, .\31 2u\24\28mobile\29 {
+    #footer .\31 2u\28mobile\29, .\31 2u\24\28mobile\29 {
         text-align: center;
     }
 
@@ -108,7 +137,7 @@ ul.contact li {
        font-size: 1.25em;
     }
 
-    h3 {
+    #footer h3 {
         margin-left: 15%;
     }
 
@@ -120,20 +149,22 @@ ul.contact li {
     }
 
     #intro {
-        padding: 0 25px 40px 25px;
+        padding: 20px;
+        margin: 0 !important;
     }
 
     #main-wrapper {
-        padding: 1em
+        padding: 1em;
     }
 
     .box {
         margin: 0 0 0 0 !important;
     }
 }
+
 .form {
     padding-left: 0px;
 }
-.button1{
-    float:right;
+.button1 {
+    margin-bottom: 15px;
 }
