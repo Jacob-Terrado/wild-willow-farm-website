@@ -11,6 +11,8 @@ form {
 #row-instructions {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #input-first-name {
@@ -49,30 +51,28 @@ form {
     max-width: 250px;
 }
 
-@media screen and (max-width: 737px) {
-    #row-zip {
-        margin: 0 auto;
-        float: none;
-    }
-}
-
-#demo-col-1 {
+#col-demographics {
     margin-top: 50px;
     margin-bottom: 50px;
+    width: 100%;
+    margin: 50px auto;
+    display: block;
 }
 
-#demo-col-2 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.demographics-content {
+  margin: 0px auto;
+  display: block;
 }
 
 select {
     margin-bottom: 50px;
     color: #000;
+    max-width: 250px;
 }
 
 textarea {
-  resize: vertical;
+    resize: vertical;
+    max-width: 500px;
 }
 
 #acknowledgement-checkbox {
@@ -89,7 +89,7 @@ textarea {
 
 @media screen and (max-width: 737px) {
     #submit-button {
-        width: 90%;
+        width: 80%;
     }
 }
 
