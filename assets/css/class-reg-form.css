@@ -66,6 +66,11 @@ form {
     margin-bottom: 50px;
 }
 
+select {
+    margin-bottom: 50px;
+    color: #000;
+}
+
 textarea {
   resize: vertical;
 }
