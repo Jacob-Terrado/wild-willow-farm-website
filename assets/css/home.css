@@ -81,8 +81,6 @@ ul.contact li {
 .secondary {
     display: block;
 	overflow: auto;
-	height: 800px;
-
 }
 
 @media screen and (min-width: 737px) {
@@ -96,6 +94,19 @@ ul.contact li {
 }
 
 @media screen and (max-width: 736px) {
+
+    ul.dates li {
+        padding: 1.3em 0 1.3em 6em;
+    }
+
+    #events {
+        padding: 20px;
+        margin: 0 !important;
+    }
+
+    .container {
+        padding: 0;
+    }
 
     .first, .second, .third {
         height: 8%;
@@ -117,7 +128,7 @@ ul.contact li {
         font-size: 2em;
     }
 
-    .\31 2u\28mobile\29, .\31 2u\24\28mobile\29 {
+    #footer .\31 2u\28mobile\29, .\31 2u\24\28mobile\29 {
         text-align: center;
     }
 
@@ -125,7 +136,7 @@ ul.contact li {
        font-size: 1.25em;
     }
 
-    h3 {
+    #footer h3 {
         margin-left: 15%;
     }
 
@@ -137,12 +148,12 @@ ul.contact li {
     }
 
     #intro {
-        padding: 25px;
+        padding: 20px;
         margin: 0 !important;
     }
 
     #main-wrapper {
-        padding: 1em
+        padding: 1em;
     }
 
     .box {
