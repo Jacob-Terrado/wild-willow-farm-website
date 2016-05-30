@@ -3,16 +3,16 @@ form {
     color: #252122;
 }
 
-.col-centered {
-    float: none;
-    margin: 0 auto;
-}
-
 #row-instructions {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#row-names {
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 #input-first-name {
@@ -23,6 +23,11 @@ form {
     max-width: 250px;
 }
 
+#row-email-phone {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 #input-email {
     max-width: 250px;
 }
@@ -31,12 +36,22 @@ form {
     max-width: 250px;
 }
 
+#row-address {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 #input-address-line-1 {
     max-width: 250px;
 }
 
 #input-address-line-2 {
     max-width: 250px;
+}
+
+#row-city-state-zip {
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 #input-city {
@@ -51,17 +66,30 @@ form {
     max-width: 250px;
 }
 
-#col-demographics {
+#demographics-title {
+    text-align: center;
     margin-top: 50px;
-    margin-bottom: 50px;
-    width: 100%;
-    margin: 50px auto;
-    display: block;
+    margin-bottom: 10px;
 }
 
-.demographics-content {
-  margin: 0px auto;
-  display: block;
+#row-demographics {
+    margin-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media screen and (max-width: 737px) {
+    #col-1-demo {
+        padding-left: 30%;
+    }
+
+    #col-2-demo {
+        padding-left: 30%;
+    }
+
+    #col-3-demo {
+        padding-left: 30%;
+    }
 }
 
 select {

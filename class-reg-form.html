@@ -96,7 +96,7 @@
 				</div>
 			</div>
 			<!-- City and state-->
-			<div class="row" id="row-city-state">
+			<div class="row" id="row-city-state-zip">
 				<div class="4u 12u(mobile)" align="center">City<br>
 					<input type="text" id="input-city">
 				</div>
@@ -108,26 +108,33 @@
 				</div>
 			</div>
 			<!-- Demographics -->
+			<div class="row">
+				<div class="12u 12u(mobile)" id="demographics-title">
+					<h1>Click All That Apply</h1>
+				</div>
+			</div>
 			<div class="row" id="row-demographics">
-				<div id="col-demographics">
-					<div class="demographics-content" vertical-align="middle">
-						<input type="checkbox" name="demographic" value="veteran" \>
-						Veteran<br>
-						<input type="checkbox" name="demographic" value="immigrant" >
-						Immigrant<br>
-						<input type="checkbox" name="demographic" value="female" \>
-						Female<br>
-						<input type="checkbox" name="demographic" value="youth" \>
-						Youth<br>
-						<input type="checkbox" name="demographic" value="farmworker" \>
-						Farmworker<br>
-						<input type="checkbox" name="demographic" value="beginner-farmer" \>
-						Beginner Farmer (farmed fewer than 5 years)<br>
-						<input type="checkbox" name="demographic" value="socially-disadvantaged" \>
-						Socially disadvantaged<br>
-						<input type="checkbox" name="demographic" value="economically-disadvantaged">
-						Economically disadvantaged
-					</div>
+				<div class="4u 12u(mobile)" id="col-1-demo">
+					<input type="checkbox" name="demographic" value="veteran" \>
+					Veteran<br>
+					<input type="checkbox" name="demographic" value="immigrant" >
+					Immigrant<br>
+					<input type="checkbox" name="demographic" value="female" \>
+					Female<br>
+				</div>
+				<div class="4u 12u(mobile)" id="col-2-demo">
+					<input type="checkbox" name="demographic" value="youth" \>
+					Youth<br>
+					<input type="checkbox" name="demographic" value="farmworker" \>
+					Farmworker<br>
+					<input type="checkbox" name="demographic" value="beginner-farmer" \>
+					Beginner Farmer<br>
+				</div>
+				<div class="4u 12u(mobile)" id="col-3-demo">
+					<input type="checkbox" name="demographic" value="socially-disadvantaged" \>
+					Socially disadvantaged<br>
+					<input type="checkbox" name="demographic" value="economically-disadvantaged">
+					Economically disadvantaged
 				</div>
 			</div>
 			<!-- Dropdown -->
