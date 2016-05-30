@@ -1335,7 +1335,7 @@
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #252122;
+			background: #C93;
 		}
 
 			input[type="button"].alt:hover,
@@ -1451,7 +1451,7 @@
 		position: absolute;
 		left: 0;
 		top: 1.3em;
-		background-color: #d52349;
+		background-color: #64AD64;
 		height: 3.5em;
 		text-align: center;
 		color: #fff;
@@ -1466,7 +1466,7 @@
 			position: absolute;
 			bottom: 0;
 			right: -1.2em;
-			border-left: solid 1.25em #d52349;
+			border-left: solid 1.25em #64AD64;
 			border-top: solid 1.8em transparent;
 			border-bottom: solid 1.8em transparent;
 		}
