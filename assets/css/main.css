@@ -1335,7 +1335,7 @@
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #252122;
+			background: #C93;
 		}
 
 			input[type="button"].alt:hover,
@@ -1398,6 +1398,11 @@
 			margin: 0 2em 2em 0;
 		}
 
+		.image.right {
+			float: right;
+			margin: 0 2em 2em 0;
+		}
+
 /* List */
 
 	ul.default {
@@ -1446,7 +1451,7 @@
 		position: absolute;
 		left: 0;
 		top: 1.3em;
-		background-color: #d52349;
+		background-color: #64AD64;
 		height: 3.5em;
 		text-align: center;
 		color: #fff;
@@ -1461,7 +1466,7 @@
 			position: absolute;
 			bottom: 0;
 			right: -1.2em;
-			border-left: solid 1.25em #d52349;
+			border-left: solid 1.25em #64AD64;
 			border-top: solid 1.8em transparent;
 			border-bottom: solid 1.8em transparent;
 		}
@@ -1713,7 +1718,7 @@
 
 	#footer-wrapper {
 		position: relative;
-		color: #858484;
+		background-color: #f7f7f7;
 	}
 
 		#footer-wrapper:before {
@@ -1729,11 +1734,12 @@
 		}
 
 		#footer-wrapper a {
-			color: #c5c4c4;
+			color: #252122;
+			text-decoration: none !important;
 		}
 
 		#footer-wrapper h2, #footer-wrapper h3, #footer-wrapper h4, #footer-wrapper h5, #footer-wrapper h6, #footer-wrapper strong, #footer-wrapper b {
-			color: #fff;
+			color: #252122;
 		}
 
 			#footer-wrapper h2 a, #footer-wrapper h3 a, #footer-wrapper h4 a, #footer-wrapper h5 a, #footer-wrapper h6 a, #footer-wrapper strong a, #footer-wrapper b a {
@@ -1813,6 +1819,12 @@
 					left: 1.75em;
 					top: 1.75em;
 					margin: -4.5em 0 4.25em -3.5em;
+				}
+
+				.box .image.featured1 {
+					left: 1.75em;
+					top: 1.75em;
+					margin: -1.5em 0 1.25em -1.5em;
 				}
 
 				.box.post header {

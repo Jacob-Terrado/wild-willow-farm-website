@@ -7,6 +7,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/class-reg-form.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip(); 
+		});
+	</script>
 </head>
 <body>
 	<!-- Header -->
@@ -53,11 +59,11 @@
 		</div>
 	</div>
 	<!-- Form -->
-	<form class="class-registration">
+	<form class="class-registration" role="form">
 		<!-- Instructions -->
 		<div class="container">
 			<div class="row" id="row-instructions">
-				<div class="col-lg-8 col-centered">
+				<div class="12u 12u(mobile)">
 					<ul>
 						<li>
 							<p>Fill out the application below. We recommend for the essay portions you write them separately and then paste into the form fields. We really do enjoy reading them.</p>
@@ -70,83 +76,84 @@
 			</div>
 			<!-- First and last name -->
 			<div class="row" id="row-names">
-				<div class="col-lg-2"></div>
-				<div class="col-lg-4" align="center">First name<br>
+				<div class="6u 12u(mobile)" align="center">First name<br>
 					<input type="text" id="input-first-name">
 				</div>
-				<div class="col-lg-4" align="center">Last name<br>
+				<div class="6u 12u(mobile)" align="center">Last name<br>
 					<input type="text" id="input-last-name">
 				</div>
-				<div class="col-lg-2"></div>
 			</div>
 			<!-- Email and phone number -->
 			<div class="row" id="row-email-phone">
-				<div class="col-lg-2"></div>
-				<div class="col-lg-4" align="center">Email address<br>
+				<div class="6u 12u(mobile)" align="center">Email address<br>
 					<input type="text" id="input-email">
 				</div>
-				<div class="col-lg-4" align="center">Phone number<br>
+				<div class="6u 12u(mobile)" align="center">Phone number<br>
 					<input type="text" id="input-phone">
 				</div>
-				<div class="col-lg-2"></div>
 			</div>
 			<!-- Street address -->
 			<div class="row" id="row-address">
-				<div class="col-lg-2"></div>
-				<div class="col-lg-4" align="center">Address line 1<br>
+				<div class="6u 12u(mobile)" align="center">Address line 1<br>
 					<input type="text" id="input-address-line-1">
 				</div>
-				<div class="col-lg-4" align="center">Address line 2<br>
+				<div class="6u 12u(mobile)" align="center">Address line 2<br>
 					<input type="text" id="input-address-line-2">
 				</div>
-				<div class="col-lg-2"></div>
 			</div>
 			<!-- City and state-->
-			<div class="row" id="row-city-state">
-				<div class="col-lg-2"></div>
-				<div class="col-lg-4" align="center">City<br>
+			<div class="row" id="row-city-state-zip">
+				<div class="4u 12u(mobile)" align="center">City<br>
 					<input type="text" id="input-city">
 				</div>
-				<div class="col-lg-4" align="center">State<br>
+				<div class="4u 12u(mobile)" align="center">State<br>
 					<input type="text" id="input-state">
 				</div>
-				<div class="col-lg-2"></div>
-			</div>
-			<!-- Zip -->
-			<div class="row" id="row-zip">
-				<div class=col-lg-12 align="center">Zip<br>
+				<div class="4u 12u(mobile)" align="center">Zip<br>
 					<input type="text" id="input-zip">
 				</div>
 			</div>
 			<!-- Demographics -->
+			<div class="row">
+				<div class="12u 12u(mobile)" id="demographics-title">
+					<h1>Click All That Apply</h1>
+				</div>
+			</div>
 			<div class="row" id="row-demographics">
-				<div class="col-lg-3"></div>
-				<div class="col-lg-3" id="demo-col-1">
-					<input type="checkbox" name="demographic" value="veteran" \>
-					Veteran<br>
-					<input type="checkbox" name="demographic" value="immigrant" >
-					Immigrant<br>
-					<input type="checkbox" name="demographic" value="female" \>
-					Female<br>
-					<input type="checkbox" name="demographic" value="youth" \>
-					Youth
+				<div class="4u 12u(mobile)" id="col-1-demo">
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="veteran" \>Veteran
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="immigrant" \>Immigrant
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="female" \>Female
+					</div>
 				</div>
-				<div class="col-lg-4" id="demo-col-2">
-					<input type="checkbox" name="demographic" value="farmworker" \>
-					Farmworker<br>
-					<input type="checkbox" name="demographic" value="beginner-farmer" \>
-					Beginner Farmer (farmed fewer than 5 years)<br>
-					<input type="checkbox" name="demographic" value="socially-disadvantaged" \>
-					Socially disadvantaged<br>
-					<input type="checkbox" name="demographic" value="economically-disadvantaged">
-					Economically disadvantaged
+				<div class="4u 12u(mobile)" id="col-2-demo">
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="youth" data-toggle="tooltip" data-original-title="Are you under 19 years old?" \>Youth
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="farmworker" \>Farmworker
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="beginner-farmer" data-toggle="tooltip" data-original-title="Have you been farming for less than 5 years?" \>Beginner Farmer
+					</div>
 				</div>
-				<div class="col-lg-2"></div>
+				<div class="4u 12u(mobile)" id="col-3-demo">
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="socially-disadvantaged" data-toggle="tooltip" data-original-title="Have you been subjected to racial or ethnic prejudice because of your identity as a member of a group without regard to your individual qualities. These groups include African Americans, American Indians or Alaskan natives, Hispanics, and Asians or Pacific Islanders." \>Socially disadvantaged
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="economically-disadvantaged" data-toggle="tooltip" data-original-title="Do you have a total household income at or below the national poverty level for a family of four or less than 50 percent of county median household income in each of the previous two years?" \>Economically disadvantaged
+					</div>
+				</div>
 			</div>
 			<!-- Dropdown -->
 			<div class="row" id="row-dropdown">
-				<div class="col-lg-4"></div>
-				<div class="col-lg-4" align="center">
+				<div class="12u 12u(mobile)" align="center">
 					How did you hear about our farm school?<br>	
 					<select name="how_did_you_hear" id="how_did_you_hear" align="center">
 						<option value="google" selected="selected">Google Search</option>
@@ -160,12 +167,10 @@
 						<option value="other">Other</option>
 					</select>
 				</div>
-				<div class="col-lg-4"></div>
 			</div>
 			<!-- Q&A -->
 			<div class="row" id="row-q-and-a">
-				<div class="col-lg-3"></div>
-				<div class=col-lg-6 align="center">
+				<div class="12u 12u(mobile)" align="center">
 					Why are you interested in sustainable agriculture and this program?<br>
 					<textarea></textarea><br>
 					What previous experience do you have in farming or gardening?<br>
@@ -181,20 +186,16 @@
 					Do you have any preliminary comments, questions, or other details for us?<br>
 					<textarea></textarea>
 				</div>
-				<div class="col-lg-3"></div>
 			</div>
 			<!-- Acknowledgement & submit button -->
 			<div class="row" id="row-acknowledgement">
-				<div class="col-lg-1"></div>
-				<div class="col-lg-10" align="center">
+				<div class="12u 12u(mobile)" align="center">
 					<input type="checkbox" id="acknowledgement-checkbox" value="read" \> I have read the information outline and feel that I have a firm grasp of what will be expected of me as a student.<br>
 					<input type="submit" value="Submit" id="submit-button" \>
 				</div>
-				<div class="col-lg-1"></div>
 			</div>
 		</div>
 	</form>
-
 	<!-- Footer -->
 	<div id="footer-wrapper">
 		<section id="footer" class="container">
