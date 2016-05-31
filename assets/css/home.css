@@ -145,7 +145,7 @@ ul.contact li {
         font-size: 1.1em;
         display: block;
         width: 100%;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     #intro {
@@ -163,7 +163,7 @@ ul.contact li {
 }
 
 .form {
-    padding-left: 0px;
+    padding-left: 0;
 }
 .button1 {
     margin-bottom: 15px;
