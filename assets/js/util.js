@@ -10,6 +10,8 @@
 			$a = $this.find('a'),
 			b = [];
 
+		var currParent = "";
+
 		$a.each(function() {
 
 			var	$this = $(this),
@@ -17,19 +19,37 @@
 				href = $this.attr('href'),
 				target = $this.attr('target');
 
-			b.push(
-				'<a ' +
-					'class="link depth-' + indent + '"' +
-					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
-					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
-				'>' +
-					'<span class="indent-' + indent + '"></span>' +
-					$this.text() +
-				'</a>'
-			);
+			if(indent == 0) {
+				currParent = this.innerText.replace(/\s+/g,"");
+			}
+
+			if(indent > 0) {
+				b.push(
+					'<a ' +
+						'class="link depth-' + indent + '-' + currParent + '"' +
+						( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
+						( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+					'>' +
+						'<span class="indent-' + indent + '"></span>' + 
+						$this.text() + 
+					'</a>'
+				);
+			} 
+			else {
+				b.push(
+					'<a ' +
+						'class="link depth-' + indent + '"' +
+						( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
+						( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+					'>' +
+						'<span class="indent-' + indent + '"></span>' + 
+						$this.text() + 
+					'</a>'
+				);
+			}
 
 		});
-
+		
 		return b.join('');
 
 	};
