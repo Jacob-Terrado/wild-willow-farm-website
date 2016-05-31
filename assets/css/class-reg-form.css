@@ -69,13 +69,12 @@ form {
 #demographics-title {
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 10px;
 }
 
 #row-demographics {
-    margin-bottom: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-bottom: 70px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 @media screen and (max-width: 737px) {
@@ -119,8 +118,4 @@ textarea {
     #submit-button {
         width: 80%;
     }
-}
-
-input[type="checkbox"] {
-    margin-right: 20px;
 }
