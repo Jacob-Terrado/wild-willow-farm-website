@@ -3,14 +3,16 @@ form {
     color: #252122;
 }
 
-.col-centered {
-    float: none;
-    margin: 0 auto;
-}
-
 #row-instructions {
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#row-names {
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 #input-first-name {
@@ -21,6 +23,11 @@ form {
     max-width: 250px;
 }
 
+#row-email-phone {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 #input-email {
     max-width: 250px;
 }
@@ -29,12 +36,22 @@ form {
     max-width: 250px;
 }
 
+#row-address {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 #input-address-line-1 {
     max-width: 250px;
 }
 
 #input-address-line-2 {
     max-width: 250px;
+}
+
+#row-city-state-zip {
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 #input-city {
@@ -49,30 +66,41 @@ form {
     max-width: 250px;
 }
 
+#demographics-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#row-demographics {
+    margin-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 @media screen and (max-width: 737px) {
-    #row-zip {
-        margin: 0 auto;
-        float: none;
+    #col-1-demo {
+        padding-left: 30%;
     }
-}
 
-#demo-col-1 {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+    #col-2-demo {
+        padding-left: 30%;
+    }
 
-#demo-col-2 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    #col-3-demo {
+        padding-left: 30%;
+    }
 }
 
 select {
     margin-bottom: 50px;
     color: #000;
+    max-width: 250px;
 }
 
 textarea {
-  resize: vertical;
+    resize: vertical;
+    max-width: 500px;
 }
 
 #acknowledgement-checkbox {
@@ -89,7 +117,7 @@ textarea {
 
 @media screen and (max-width: 737px) {
     #submit-button {
-        width: 90%;
+        width: 80%;
     }
 }
 
