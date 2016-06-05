@@ -1718,7 +1718,7 @@
 
 	#footer-wrapper {
 		position: relative;
-		color: #858484;
+		background-color: #f7f7f7;
 	}
 
 		#footer-wrapper:before {
@@ -1734,11 +1734,12 @@
 		}
 
 		#footer-wrapper a {
-			color: #c5c4c4;
+			color: #252122;
+			text-decoration: none !important;
 		}
 
 		#footer-wrapper h2, #footer-wrapper h3, #footer-wrapper h4, #footer-wrapper h5, #footer-wrapper h6, #footer-wrapper strong, #footer-wrapper b {
-			color: #fff;
+			color: #252122;
 		}
 
 			#footer-wrapper h2 a, #footer-wrapper h3 a, #footer-wrapper h4 a, #footer-wrapper h5 a, #footer-wrapper h6 a, #footer-wrapper strong a, #footer-wrapper b a {

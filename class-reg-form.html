@@ -7,6 +7,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/class-reg-form.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip(); 
+		});
+	</script>
 </head>
 <body>
 	<!-- Header -->
@@ -53,7 +59,7 @@
 		</div>
 	</div>
 	<!-- Form -->
-	<form class="class-registration">
+	<form class="class-registration" role="form">
 		<!-- Instructions -->
 		<div class="container">
 			<div class="row" id="row-instructions">
@@ -115,26 +121,34 @@
 			</div>
 			<div class="row" id="row-demographics">
 				<div class="4u 12u(mobile)" id="col-1-demo">
-					<input type="checkbox" name="demographic" value="veteran" \>
-					Veteran<br>
-					<input type="checkbox" name="demographic" value="immigrant" >
-					Immigrant<br>
-					<input type="checkbox" name="demographic" value="female" \>
-					Female<br>
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="veteran" \>Veteran
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="immigrant" \>Immigrant
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="female" \>Female
+					</div>
 				</div>
 				<div class="4u 12u(mobile)" id="col-2-demo">
-					<input type="checkbox" name="demographic" value="youth" \>
-					Youth<br>
-					<input type="checkbox" name="demographic" value="farmworker" \>
-					Farmworker<br>
-					<input type="checkbox" name="demographic" value="beginner-farmer" \>
-					Beginner Farmer<br>
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="youth" data-toggle="tooltip" data-original-title="Are you under 19 years old?" \>Youth
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="farmworker" \>Farmworker
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="beginner-farmer" data-toggle="tooltip" data-original-title="Have you been farming for less than 5 years?" \>Beginner Farmer
+					</div>
 				</div>
 				<div class="4u 12u(mobile)" id="col-3-demo">
-					<input type="checkbox" name="demographic" value="socially-disadvantaged" \>
-					Socially disadvantaged<br>
-					<input type="checkbox" name="demographic" value="economically-disadvantaged">
-					Economically disadvantaged
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="socially-disadvantaged" data-toggle="tooltip" data-original-title="Have you been subjected to racial or ethnic prejudice because of your identity as a member of a group without regard to your individual qualities. These groups include African Americans, American Indians or Alaskan natives, Hispanics, and Asians or Pacific Islanders." \>Socially disadvantaged
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="demographic" value="economically-disadvantaged" data-toggle="tooltip" data-original-title="Do you have a total household income at or below the national poverty level for a family of four or less than 50 percent of county median household income in each of the previous two years?" \>Economically disadvantaged
+					</div>
 				</div>
 			</div>
 			<!-- Dropdown -->

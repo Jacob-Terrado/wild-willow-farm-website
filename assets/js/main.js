@@ -4,6 +4,11 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+var shownGetInformed = false;
+var shownGetInvolved = false;
+var shownGroupActivities = false;
+var shownSupport = false;
+
 (function($) {
 
 	skel
@@ -79,11 +84,30 @@
 						target: $body,
 						visibleClass: 'navPanel-visible'
 					});
+					$(".depth-1-GetInformed").hide();
+					$(".depth-1-GetInvolved").hide();
+					$(".depth-1-GroupActivities").hide();
+					$(".depth-1-Support").hide();
 
 			// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
 					$('#titleBar, #navPanel, #page-wrapper')
 						.css('transition', 'none');
+
+				$("#navPanel .link").click(function(){
+					var parent = $(this);
+					var temp = parent[0].innerText.replace(/\s+/g,"");
+					//console.log("shown" + temp);
+					//console.log(window[("shown" + temp)]);
+					if(window[("shown" + temp)]) {
+						$(".depth-1-" + temp).hide();
+						window[("shown" + temp)] = false;
+					}
+					else {
+						$(".depth-1-" + temp).show();
+						window[("shown" + temp)] = true;
+					}
+				})
 
 	});
 
