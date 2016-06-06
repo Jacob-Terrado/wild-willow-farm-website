@@ -2423,9 +2423,28 @@
 						border-top: 0;
 					}
 
+					#navPanel .link.depth-1-GetInformed {
+						text-indent:20px;
+					}
+
+					#navPanel .link.depth-1-GetInvolved {
+						text-indent:20px;
+					}
+
+					#navPanel .link.depth-1-GroupActivities {
+						text-indent:20px;
+					}
+
+					#navPanel .link.depth-1-Support {
+						text-indent:20px;
+					}
+
+
 				#navPanel .indent-1 {
 					display: inline-block;
 					width: 1em;
+					margin-right: 10px;
+					float: right;
 				}
 
 				#navPanel .indent-2 {
@@ -2450,7 +2469,7 @@
 
 				#navPanel .depth-0 {
 					color: #fff;
-				}
+				}	
 
 			body.navPanel-visible #page-wrapper {
 				-moz-transform: translateX(275px);
